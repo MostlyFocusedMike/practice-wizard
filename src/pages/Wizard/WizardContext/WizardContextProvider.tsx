@@ -2,6 +2,8 @@ import { useState, ReactNode, Dispatch, SetStateAction } from 'react';
 import WizardContext from '.';
 import { WizardConfig, WizardMetadata, WizardStepState, WizardStepConfig } from '../WizardTypes';
 
+// I'm not yet totally sure how much raw state vs helper methods to expose,
+// and still figuring out how things like check marks should behave
 export type WizardContextType = {
   wizardMetadata: WizardMetadata;
   wizardStepsConfig: WizardStepConfig[];
