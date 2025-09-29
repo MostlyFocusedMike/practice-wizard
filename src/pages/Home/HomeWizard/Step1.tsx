@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
-import { WizardConfig } from "../../Wizard/WizardTypes";
 import WizardMovementButtons from "../../Wizard/shared-components/WizardMovementButtons";
 import WizardContext from "../../Wizard/WizardContext";
+import WizardStepHeader from "../../Wizard/shared-components/WizardStepHeader";
 
 export default function Step1() {
-  const { currentStepConfig: { stepLabel }, handleNextStep } = useContext(WizardContext);
+  const { handleNextStep } = useContext(WizardContext);
   const [name, setName] = useState('')
 
   // mocking a fetch
@@ -26,7 +26,7 @@ export default function Step1() {
   }
 
   return <>
-    <h1>{stepLabel}, ((Step 1))</h1>
+    <WizardStepHeader />
     <label>
       name:
       <input type="text" value={name} onChange={handleChange} className="border rounded px-1 ml-2" />

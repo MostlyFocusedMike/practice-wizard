@@ -31,6 +31,7 @@ export default function Step1() {
   return <>
     <WizardStepHeader />
     <form onSubmit={handleSubmit}>
+      <p>See how easily we can incorporate the helpers buttons into any form?</p>
 
       <label>
         name:

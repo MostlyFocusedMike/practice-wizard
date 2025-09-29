@@ -12,7 +12,7 @@ export default function HomePage() {
     <br />
     <div className="max-w-150 m-auto">
       <p>Check out the code of course, but this is the rough idea for a new wizard.</p>
-      <p>There's a home and roles wizard to show some of the different features</p>
+      <p>There's a super simple home wizard and a more realistic roles wizard to show some of the different features</p>
       <br />
       <p>I'm not completely done (timeboxed to 2 days) so things like showing the step number aren't polished
         (also because I'm not sure exactly how those should behave for things like going back and editing).</p>

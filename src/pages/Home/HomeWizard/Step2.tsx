@@ -4,7 +4,7 @@ import WizardContext from "../../Wizard/WizardContext";
 import WizardStepHeader from "../../Wizard/shared-components/WizardStepHeader";
 
 export default function Step2() {
-  const { handleBackStep, handleNextStep } = useContext(WizardContext);
+  const { handleBackStep } = useContext(WizardContext);
 
   const handleBack = async () => {
     confirm('You will lose any unsaved changes')
